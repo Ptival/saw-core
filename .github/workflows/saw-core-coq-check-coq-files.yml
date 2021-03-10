@@ -19,7 +19,8 @@ jobs:
     name: saw-core-coq - ${{ matrix.os }} - coq-${{ matrix.coq }}
     env:
       COQ_VERSION: ${{ matrix.coq }}
-      OCAML_VERSION: 4.11.0
+      # coq-bits claims to support < 4.10 only
+      OCAML_VERSION: 4.09.1
       COQBITS_VERSION: 1.0.0
     steps:
 
