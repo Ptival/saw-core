@@ -36,7 +36,7 @@ jobs:
           key: opam-${{ runner.os }}-${{ env.OCAML_VERSION }}-${{ env.COQ_VERSION }}-${{ env.COQBITS_VERSION }}
 
       - name: Set up ocaml and opam
-        uses: avsm/setup-ocaml@v1.1.5
+        uses: actions-ml/setup-ocaml@df8c831c6c1e49804621d6e09c4ab9235da31fb5
         with:
           ocaml-version: ${{ env.OCAML_VERSION }}
 
